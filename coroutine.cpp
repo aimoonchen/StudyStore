@@ -15,7 +15,7 @@
 //   }
 //
 ///////////////////////////////////////////////////////////////////////////////////////
-
+// test edito;
 // Uncomment the following line to see the compilation with visibility of
 // task coroutine type method definitions. This should allow you to see more
 // closely what the final generated code would look like whereas with this
@@ -75,8 +75,7 @@ namespace std
         using promise_type = typename std::remove_cvref_t<Ret>::promise_type;
     };
 
-    template<typename Promise = void>
-    class coroutine_handle;
+
 
     template<>
     class coroutine_handle<void> {
