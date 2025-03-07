@@ -509,7 +509,9 @@ struct __g_state : __coroutine_state_with_promise<__g_promise_t> {
         manual_lifetime<task::promise_type::final_awaiter> __tmp4;
     };
 };
-
+/////////////////
+    int fff();
+////////////////
 /////
 // The "ramp" function
 
