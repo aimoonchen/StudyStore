@@ -1,3 +1,5 @@
+#define TEST
+#ifdef TEST
 ////////////////////////////////////////////////////////////////////////////////////////
 // Supporting code for blog post "C++ Coroutines: Understanding the Compiler Transform"
 //
@@ -656,3 +658,19 @@ suspend_point_2:
 destroy_state:
     delete state;
 }
+
+#else
+
+int sum(int x, int y)
+{
+    auto total s = x + y;
+    return total;
+}
+int main()
+{
+    int x = 1;
+    int y = 2;
+    auto ret = sum(x, y);
+    return 0;
+}
+#endif
